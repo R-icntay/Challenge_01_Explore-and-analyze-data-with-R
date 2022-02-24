@@ -1,5 +1,5 @@
 {
-	"name": "R",
+	"name": "R Data Science Environmnet",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update VARIANT to pick a specific R version: 4, 4.1, 4.0
@@ -18,30 +18,11 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		// Add Jupyter, R and Python vscode extensions
 		"ikuyadeu.r",
 		"rdebugger.r-debugger",
-		//"/renv/cache/r-latest.vslx",
-		"ionutvmi.path-autocomplete",
-		"usernamehw.errorlens",
-		"mhutchie.git-graph",
-		"wayou.vscode-todo-highlight",
-		"tomoki1207.pdf",
-		"DavidAnson.vscode-markdownlint",
-		"Rubymaniac.vscode-paste-and-indent",
-		"GrapeCity.gc-excelviewer",
-		"IBM.output-colorizer",
-		"Mohamed-El-Fodil-Ihaddaden.shinysnip",
-		"hediet.vscode-drawio",
-		"MS-vsliveshare.vsliveshare-pack",
-		"ms-python.python",
-		//"RDebugger.r-debugger",
-		//"GitHub.copilot",
-		"eamodio.gitlens",
-		"GitHub.vscode-pull-request-github",
-		"hoovercj.vscode-power-mode"
-		//"mikhail-arkhipov.r"
-		
-
+		"ms-toolsai.jupyter",
+		"ms-python.python"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
