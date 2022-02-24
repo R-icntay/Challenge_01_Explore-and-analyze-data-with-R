@@ -26,7 +26,41 @@ This workshop allows learners to use the skills learnt in the module [Explore an
 
 ## Prerequisites
 
-____** Coming back to this**
+To get you up and running and writing R code in time, we have containarized this workshop such that you have an R-ready out of the box environment coding environmnet.
+
+### Setting up the development container
+
+A **development container** is a running [Docker](https://www.docker.com) container with a well-defined tool/runtime stack and its prerequisites. You can try out development containers with **[GitHub Codespaces](https://github.com/features/codespaces)** or **[Visual Studio Code Remote - Containers](https://aka.ms/vscode-remote/containers)**.
+
+#### GitHub Codespaces
+Follow these steps to open this workshop in a Codespace:
+1. Click the Code drop-down menu and select the **Open with Codespaces** option.
+2. Select **+ New codespace** at the bottom on the pane.
+
+For more info, check out the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace#creating-a-codespace).
+
+### VS Code Remote - Containers
+Follow these steps to open this workshop in a container using the VS Code Remote - Containers extension:
+
+1. If this is your first time using a development container, please ensure your system meets the pre-reqs (i.e. have Docker installed) in the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
+
+2. Press <kbd>F1</kbd> select and **Add Development Container Configuration Files...** command for **Remote-Containers** or **Codespaces**.
+
+   > **Note:** If needed, you can drag-and-drop the `.devcontainer` folder from this sub-folder in a locally cloned copy of this repository into the VS Code file explorer instead of using the command.
+
+3. Select this definition. You may also need to select **Show All Definitions...** for it to appear.
+
+4. Finally, press <kbd>F1</kbd> and run **Remote-Containers: Reopen Folder in Container** to start using the definition.
+
+This definition includes some test code that will help you verify it is working as expected on your system. Open the `all-systems-check` folder where you can choose to run the `.R`, `.Rmd` or `.ipynb` scripts. You should see "Hello, remote world!" in an R terminal window (for `.R` and `.Rmd`) or within a Jupyter Notebook (for `.ipynb`) after the respective script executes.
+
+
+3. **Rebuild or update your container**
+
+   At some point, you may want to make changes to your container, such as installing a new package. You'll rebuild your container for your changes to take effect. 
+
+
+
 
 ## What you will learn
 
