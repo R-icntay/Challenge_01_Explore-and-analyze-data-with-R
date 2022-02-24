@@ -1,10 +1,7 @@
-#-------------------------------------------------------------------------------------------------------------
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
-#-------------------------------------------------------------------------------------------------------------
-
+# Function that returns an awesome message
 say_hello <- function(name) {
-  message(paste0("Hello, ", name, "!"))
+  message(paste0("Hello, ", name, ":) In this module, we learn how to Explore
+  and Analyze Data with R."))
 }
 
 say_hello("remote world")
