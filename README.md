@@ -26,7 +26,7 @@ This workshop allows learners to use the skills learnt in the module [Explore an
 
 ## Prerequisites
 
-To get you up and running and writing R code in no time, we have containarized this workshop such that you have an R-ready out of the box environment coding environmnet.
+To get you up and running and writing R code in no time, we have containarized this workshop such that you have an ready out of the box R coding environmnet.
 
 ### Setting up the development container
 
