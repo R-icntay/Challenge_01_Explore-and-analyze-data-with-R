@@ -23,7 +23,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         libcurl4-openssl-dev \
         libssl-dev \
         libxml2-dev \
-        pandoc \
         libxt-dev \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts \
     && python3 -m pip --no-cache-dir install radian \
@@ -31,16 +30,35 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         devtools \
         languageserver \
         httpgd \
-        #summarytools \
-        patchwork \
-        #IRkernel \
         tidyverse \
+        tidymodels \
+        statip \
+        patchwork \
+        paletteer \
+        glmnet \
+        randomForest \
+        xgboost \
+        here \
+        doParallel \
+        janitor \
+        vip \
+        ranger \
+        palmerpenguins \
+        skimr \
+        nnet \
+        kernlab \
+        plotly \
+        factoextra \
+        cluster \
+        ottr \
     && rm -rf /tmp/downloaded_packages
 
-# Install otter and devtools
-RUN installGithub.r ucbds-infra/ottr@stable
-RUN Rscript -e "devtools::install_github('https://github.com/dcomtois/summarytools/tree/0-8-9')"
-RUN Rscript -e "library(ottr)"
+# Install summarytools and load some R package off the bat
+RUN R -e "devtools::install_github('https://github.com/dcomtois/summarytools/tree/0-8-9')"
+RUN R -e "library(ottr)"
+RUN R -e "library(here)"
+RUN R -e "library(languageserver)"
+# RUN installGithub.r ucbds-infra/ottr@stable
 
 
 # VSCode R Debugger dependency. Install the latest release version from GitHub without using GitHub API.
@@ -56,3 +74,15 @@ RUN echo 'source(file.path(Sys.getenv("HOME"), ".vscode-R", "init.R"))' >> ${R_H
 # RUN apt-get update \
 #     && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+# [Optional] Uncomment this section to install additional R packages.
+# RUN install2.r --error --skipinstalled --ncpus -1 <your-package-list-here>
+
+
+# [Optional] Uncomment this section to install vscode-jupyter dependencies.
+RUN apt-get update \
+    && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends libzmq3-dev \
+    && install2.r --error --skipinstalled --ncpus -1 IRkernel \
+    && python3 -m pip --no-cache-dir install jupyter \
+    && R --vanilla -s -e 'IRkernel::installspec(user = FALSE)'
