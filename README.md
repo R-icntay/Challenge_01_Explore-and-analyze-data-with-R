@@ -39,7 +39,7 @@ Follow these steps to open this workshop in a Codespace:
 
 For more info, check out the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace#creating-a-codespace).
 
-### VS Code Remote - Containers
+#### VS Code Remote - Containers
 Follow these steps to open this workshop in a container using the VS Code Remote - Containers extension:
 
 1. If this is your first time using a development container, please ensure your system meets the pre-reqs (i.e. have Docker installed) in the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
@@ -57,7 +57,7 @@ This definition includes some test code that will help you verify it is working 
 
 3. **Rebuild or update your container**
 
-   At some point, you may want to make changes to your container, such as installing a new package. You'll rebuild your container for your changes to take effect. 
+   At some point, you may want to make changes to your container, such as installing a new package. You'll need to rebuild your container for your changes to take effect. 
 
 
 
