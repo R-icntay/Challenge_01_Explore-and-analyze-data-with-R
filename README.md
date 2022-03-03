@@ -3,7 +3,7 @@
 
 ## Module Source
 
-[Explore and Analyze data with R]()
+[Explore and Analyze data with R](https://review.docs.microsoft.com/en-us/learn/modules/explore-analyze-data-with-r/?branch=pr-en-us-24736)
 
 ## Goals
 
@@ -22,11 +22,11 @@ Hello and welcome to this learning adventure! In this repo, you will find a Data
 
 ## Pre-Learning
 
-This workshop allows learners to use the skills learnt in the module [Explore and Analyze Data with R]() to create their own regression models. As such, learners are encouraged to go through the module beforehand so as to be conversant with some of the concepts covered in this worksop.
+This workshop allows learners to use the skills learnt in the module [Explore and Analyze Data with R](https://review.docs.microsoft.com/en-us/learn/modules/explore-analyze-data-with-r/?branch=pr-en-us-24736) to create their own regression models. As such, learners are encouraged to go through the module beforehand so as to be conversant with some of the concepts covered in this worksop.
 
 ## Prerequisites
 
-To get you up and running and writing R code in no time, we have containarized this workshop such that you have an ready out of the box R coding environmnet.
+To get you up and running and writing R code in no time, we have containarized this workshop such that you have a ready out of the box R coding environment.
 
 ### Setting up the development container
 
@@ -54,23 +54,20 @@ Follow these steps to open this workshop in a container using the VS Code Remote
 
 This definition includes some test code that will help you verify it is working as expected on your system. Open the `all-systems-check` folder where you can choose to run the `.R`, `.Rmd` or `.ipynb` scripts. You should see "Hello, remote world!" in an R terminal window (for `.R` and `.Rmd`) or within a Jupyter Notebook (for `.ipynb`) after the respective script executes.
 
-
-3. **Rebuild or update your container**
-
-   At some point, you may want to make changes to your container, such as installing a new package. You'll need to rebuild your container for your changes to take effect. 
+At some point, you may want to make changes to your container, such as installing a new package. You'll need to rebuild your container for your changes to take effect. 
 
 
 
 
 ## What you will learn
 
-Let's say the Deaprtmnet of Transportation is considering the addition of a new airport. As the incredible data scientist you are, you have been requested to explore existing data. The results of your analysis might form the basis of a report or a machine learning mode.
+Let's say the Department of Transportation is considering the addition of a new airport. As the incredible data scientist you are, you have been requested to explore existing data. The results of your analysis might form the basis of a report or a machine learning mode.
 
 In this challenge, you'll explore a real-world dataset containing flights data from the US Department of Transportation.
 
 ## Milestone 1: Clean the data
 
-Rarely do we find data in the right form for analysis. As such, once you’ve imported your data, a good place to start your analysis is by cleaning data to handle errors, missing values, and other issues. Is the data accurate and appropriate for your desired analysis? Cleaning data pays off in the long run and allows for easier and more accurate Exploratory Data Analysis.
+Rarely we find data in the right form for analysis. As such, once you’ve imported your data, a good place to start your analysis is by answering to the question: "Is the data accurate and appropriate for your desired analysis?". Cleaning data to handle errors, missing values, and other issues pays off in the long run and allows for easier and more accurate Exploratory Data Analysis.
 
 In this section you will:
 
