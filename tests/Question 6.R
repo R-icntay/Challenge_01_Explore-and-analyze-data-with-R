@@ -10,8 +10,8 @@ test = list(
       code = {
         ## Test ##
         test_that('quantile values are correct', {
-          expect_equal(DepDelay_01pcntile, -12)
-          expect_equal(DepDelay_90pcntile, 17)
+          expect_equal(depdelay_01pcntile, -12)
+          expect_equal(depdelay_90pcntile, 17)
   
         })
       }
